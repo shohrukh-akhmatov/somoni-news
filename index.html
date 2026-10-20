@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Somoni News</title>
+<style>
+  :root { --bg: #f2f2f7; --card: #fff; --text: #111; --muted: #6b6b70; --line: rgba(60,60,67,.18); --tint: #0a7c5a; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #000; --card: #1c1c1e; --text: #f2f2f7; --muted: #98989f; --line: rgba(84,84,88,.5); --tint: #34c08f; }
+  }
+  * { box-sizing: border-box; }
+  body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.5 -apple-system, system-ui, sans-serif; }
+  main { max-width: 700px; margin: 0 auto; padding: 24px 16px 48px; }
+  h1 { font-size: 34px; margin: 0; }
+  .sub { color: var(--muted); font-weight: 600; margin: 2px 0 20px; }
+  .lang { float: right; }
+  .lang button { border: 1px solid var(--line); background: var(--card); color: var(--text); border-radius: 6px; padding: 4px 10px; cursor: pointer; }
+  .lang button[aria-pressed=true] { border-color: var(--tint); color: var(--tint); }
+  .card { display: block; background: var(--card); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; margin-bottom: 12px; color: inherit; text-decoration: none; }
+  .card img, .hero { width: 100%; aspect-ratio: 16/9; object-fit: cover; display: block; background: var(--line); }
+  .body { padding: 13px 16px; }
+  .meta { font-size: 12px; color: var(--muted); }
+  .tag { color: var(--tint); font-weight: 700; text-transform: uppercase; font-size: 11px; }
+  .card h2 { font-size: 17px; margin: 4px 0; }
+  .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  article .hero { border-radius: 8px; }
+  article h1 { font-size: 24px; margin: 8px 0 12px; }
+  article h3 { font-size: 20px; margin: 20px 0 6px; }
+  blockquote { margin: 12px 0; padding-left: 12px; border-left: 3px solid var(--tint); color: var(--muted); font-style: italic; }
+  figure { margin: 12px 0; } figure img { width: 100%; border-radius: 8px; } figcaption { font-size: 12px; color: var(--muted); }
+  a { color: var(--tint); }
+  .error { color: #c0392b; }
+</style>
+</head>
+<body>
+<main>
+  <div class="lang"><button data-lang="ru">RU</button> <button data-lang="tg">TJ</button></div>
+  <div id="app"></div>
+</main>
+<script>
+  // Preview of what the app shows. The app itself reads the JSON directly.
+  const state = { lang: new URLSearchParams(location.search).get("lang") === "tg" ? "tg" : "ru" };
+  const app = document.getElementById("app");
+  const UI = {
+    ru: { title: "Новости", sub: "Курсы, банки и переводы", all: "Все новости", source: "Открыть источник" },
+    tg: { title: "Хабарҳо", sub: "Қурбҳо, бонкҳо ва интиқолҳо", all: "Ҳамаи хабарҳо", source: "Манбаъро кушодан" }
+  };
+  const L = () => UI[state.lang] || UI.ru;
+
+  const t = v => !v ? "" : typeof v === "string" ? v : (v[state.lang] || v.ru || v.tg || Object.values(v)[0] || "");
+  const esc = s => s.replace(/[&<>"']/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  const md = s => esc(s)
+    .replace(/\*\*(.+?)\*\*/g, "<b>$1</b>")
+    .replace(/\*(.+?)\*/g, "<i>$1</i>")
+    .replace(/\[(.+?)\]\((https:\/\/[^\s)]+)\)/g, '<a href="$2" target="_blank" rel="noopener">$1</a>');
+  const img = p => !p ? "" : /^https:\/\//.test(p) ? p : p.replace(/^\//, "");
+  const date = d => new Date(d).toLocaleDateString(state.lang === "tg" ? "tg-TJ" : "ru-RU", { day: "numeric", month: "short", year: "numeric" });
+  const meta = a => `<div class="meta">${a.tag ? `<span class="tag">${esc(t(a.tag))}</span> · ` : ""}${date(a.published_at)}</div>`;
+  const load = p => fetch(p, { cache: "no-store" }).then(r => { if (!r.ok) throw new Error(p + ": " + r.status); return r.json(); });
+
+  async function render() {
+    document.querySelectorAll(".lang button").forEach(b => b.setAttribute("aria-pressed", b.dataset.lang === state.lang));
+    document.documentElement.lang = state.lang;
+    const id = location.hash.slice(1);
+    try {
+      if (id && /^[A-Za-z0-9_-]+$/.test(id)) {
+        const a = await load(`articles/${id}.json`);
+        const blocks = a.blocks.map(b => ({
+          heading: () => `<h3>${esc(t(b.text))}</h3>`,
+          paragraph: () => `<p>${md(t(b.text))}</p>`,
+          quote: () => `<blockquote>${md(t(b.text))}</blockquote>`,
+          image: () => `<figure><img src="${esc(img(b.url))}" alt="">${b.caption ? `<figcaption>${esc(t(b.caption))}</figcaption>` : ""}</figure>`
+        }[b.type] || (() => ""))()).join("");
+        app.innerHTML = `<p><a href="#">← ${L().all}</a></p><article>
+          ${a.image ? `<img class="hero" src="${esc(img(a.image))}" alt="">` : ""}
+          <div style="margin-top:12px">${meta(a)}</div><h1>${esc(t(a.title))}</h1>${blocks}
+          ${/^https:\/\//.test(a.source_url || "") ? `<p><a href="${esc(a.source_url)}" target="_blank" rel="noopener">${L().source}</a></p>` : ""}
+        </article>`;
+      } else {
+        const feed = await load("index.json");
+        const items = [...feed.articles].sort((x, y) => new Date(y.published_at) - new Date(x.published_at));
+        app.innerHTML = `<h1>${L().title}</h1>
+          <div class="sub">${L().sub}</div>` +
+          items.map(a => `<a class="card" href="#${esc(a.id)}">
+            ${a.image ? `<img src="${esc(img(a.image))}" alt="" loading="lazy">` : ""}
+            <div class="body">${meta(a)}<h2>${esc(t(a.title))}</h2>${a.summary ? `<p>${esc(t(a.summary))}</p>` : ""}</div>
+          </a>`).join("");
+      }
+    } catch (e) {
+      app.innerHTML = `<p class="error">${esc(String(e.message || e))}</p>`;
+    }
+    scrollTo(0, 0);
+  }
+
+  document.querySelectorAll(".lang button").forEach(b => b.onclick = () => { state.lang = b.dataset.lang; render(); });
+  addEventListener("hashchange", render);
+  render();
+</script>
+</body>
+</html>
