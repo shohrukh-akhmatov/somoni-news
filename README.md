@@ -6,46 +6,17 @@ News feed for the Somoni apps, served by GitHub Pages at
 News is published in **Russian (`ru`) and Tajik (`tg`)**. In the app the reader
 switches between them with the Рус / Тоҷ control on the News tab.
 
-| Page | What it is |
-|---|---|
-| `/` (`index.html`) | Public preview of the feed (RU / TJ) |
-| `/admin.html` | Admin panel: create, edit and delete posts |
+`index.html` is a public preview of the feed (RU / TJ).
 
-## Admin panel
+## Publishing
 
-`admin.html` publishes by committing to this repo through the GitHub API.
-GitHub Pages then redeploys, and the site and apps show the change within about
-1–2 minutes. There's no server and nothing to deploy.
+Posts are written with the **local admin panel**, which runs only on the
+editor's laptop and isn't part of this repo or the site. It commits to a local
+clone of this repo and publishes with a normal `git push`, so no token or key
+is stored anywhere. GitHub Pages redeploys after each push, and the site and
+apps show the change within about 1–2 minutes.
 
-### One-time setup: create a token
-
-1. GitHub → **Settings → Developer settings → Personal access tokens →
-   Fine-grained tokens → Generate new token**.
-2. **Repository access:** *Only select repositories* → `somoni-news`.
-3. **Permissions → Repository permissions → Contents: Read and write**. Leave
-   everything else as is.
-4. Set an expiry date, generate the token, and copy it.
-5. Open `https://shohrukh-akhmatov.github.io/somoni-news/admin.html`, paste the
-   token, and click **Подключиться**.
-
-The token is stored only in that browser (or for the tab session only, if
-"Запомнить" is unchecked) and is sent only to `api.github.com`. The admin page
-itself is public, but without a token it can't change anything. If a token
-leaks, revoke it on GitHub and create a new one.
-
-### What the panel does
-
-- Lists posts from `index.json`, newest first.
-- Editor with Russian and Tajik fields side by side: title, card summary, tag,
-  cover image, and a body built from blocks (paragraph, subheading, quote,
-  image with caption) that you can reorder.
-- Resizes images in the browser to 1600 px wide and saves them as JPEG under
-  500 KB.
-- Writes the image files, `articles/<id>.json` and `index.json` in **one
-  commit**. If someone else pushed at the same moment, it retries on top of
-  their change.
-- Deleting a post removes its article file, its images and its entry in the
-  feed.
+You can also edit the JSON by hand and push. The format is below.
 
 ## File format
 
