@@ -107,7 +107,6 @@ Two more optional fields, for cards like your Telegram channel or discussion gro
   pinned cards are ordered newest first by `published_at`.
 - `link` (https only) makes the card open that address instead of an article. A
   link card needs no `articles/<id>.json` and is never announced by push.
-- The "latest news" in the weekly reminder ignores link cards.
 
 ### `articles/<id>.json`
 
