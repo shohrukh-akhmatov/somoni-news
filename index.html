@@ -24,9 +24,11 @@
   .tag { color: var(--tint); font-weight: 700; text-transform: uppercase; font-size: 11px; }
   .card h2 { font-size: 17px; margin: 4px 0; }
   .card p { margin: 0; color: var(--muted); font-size: 15px; }
+  .pin { color: var(--tint); font-weight: 700; font-size: 11px; }
   article .hero { border-radius: 8px; }
   article h1 { font-size: 24px; margin: 8px 0 12px; }
   article h3 { font-size: 20px; margin: 20px 0 6px; }
+  article p, blockquote { white-space: pre-line; } /* line breaks inside a block, as in the apps */
   blockquote { margin: 12px 0; padding-left: 12px; border-left: 3px solid var(--tint); color: var(--muted); font-style: italic; }
   figure { margin: 12px 0; } figure img { width: 100%; border-radius: 8px; } figcaption { font-size: 12px; color: var(--muted); }
   a { color: var(--tint); }
@@ -43,8 +45,8 @@
   const state = { lang: new URLSearchParams(location.search).get("lang") === "tg" ? "tg" : "ru" };
   const app = document.getElementById("app");
   const UI = {
-    ru: { title: "Новости", sub: "Курсы, банки и переводы", all: "Все новости", source: "Открыть источник" },
-    tg: { title: "Хабарҳо", sub: "Қурбҳо, бонкҳо ва интиқолҳо", all: "Ҳамаи хабарҳо", source: "Манбаъро кушодан" }
+    ru: { title: "Новости", sub: "Курсы, банки и переводы", all: "Все новости", source: "Открыть источник", pinned: "📌 ЗАКРЕПЛЕНО" },
+    tg: { title: "Хабарҳо", sub: "Қурбҳо, бонкҳо ва интиқолҳо", all: "Ҳамаи хабарҳо", source: "Манбаъро кушодан", pinned: "📌 ЧАСПОНИДА" }
   };
   const L = () => UI[state.lang] || UI.ru;
 
@@ -79,16 +81,25 @@
         </article>`;
       } else {
         const feed = await load("index.json");
-        const items = [...feed.articles].sort((x, y) => new Date(y.published_at) - new Date(x.published_at));
+        // Pinned cards first, as in the apps; newest first within each group.
+        const items = [...feed.articles].sort((x, y) =>
+          (y.pinned === true) - (x.pinned === true) || new Date(y.published_at) - new Date(x.published_at));
+        // A link card (a Telegram channel, say) opens its link, not an article.
+        const href = a => /^https:\/\//.test(a.link || "") ? `${esc(a.link)}" target="_blank" rel="noopener` : `#${esc(a.id)}`;
         app.innerHTML = `<h1>${L().title}</h1>
           <div class="sub">${L().sub}</div>` +
-          items.map(a => `<a class="card" href="#${esc(a.id)}">
+          items.map(a => `<a class="card" href="${href(a)}">
             ${a.image ? `<img src="${esc(img(a.image))}" alt="" loading="lazy">` : ""}
-            <div class="body">${meta(a)}<h2>${esc(t(a.title))}</h2>${a.summary ? `<p>${esc(t(a.summary))}</p>` : ""}</div>
+            <div class="body">${a.pinned === true ? `<div class="pin">${L().pinned}</div>` : ""}${meta(a)}<h2>${esc(t(a.title))}</h2>${a.summary ? `<p>${esc(t(a.summary))}</p>` : ""}</div>
           </a>`).join("");
       }
     } catch (e) {
-      app.innerHTML = `<p class="error">${esc(String(e.message || e))}</p>`;
+      // Opened by double-clicking the file: browsers block fetch() from file:// pages.
+      app.innerHTML = !/^https?:$/.test(location.protocol)
+        ? `<p class="error">Эту страницу нельзя открыть с диска двойным щелчком: браузер не даёт ей читать файлы
+            («Failed to fetch»). Откройте <a href="https://shohrukh-akhmatov.github.io/somoni-news/">сайт</a> или,
+            пока работает админка, <a href="http://127.0.0.1:8770/site/index.html">127.0.0.1:8770/site/index.html</a>.</p>`
+        : `<p class="error">${esc(String(e.message || e))}</p>`;
     }
     scrollTo(0, 0);
   }
