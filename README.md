@@ -57,6 +57,7 @@ exactly this format.
 index.json            list of posts, shown as cards in the News tab
 articles/<id>.json    one full post, loaded when a card is tapped
 images/               JPEG / PNG / WebP pictures (no SVG, no HEIC)
+calculator-data.json  federal & regional coefficients for the Migrant Payment Calculator tab
 ```
 
 Rules:
@@ -130,3 +131,14 @@ Paragraphs and quotes accept inline Markdown: `**bold**`, `*italic*`,
 `[link](https://...)`. `source_url` is optional and must be https. Apps skip
 block types they don't know, so new types can be added later without breaking
 older app versions.
+
+### `calculator-data.json`
+
+Powers the **Migrant Monthly Payment Calculator** tab in the iOS and Android apps
+(managed from the local admin panel's **Калькулятор платежей** tab):
+
+- `defaultYear`: default tax year (e.g. `2027`).
+- `updatedAt`: UTC timestamp (`2026-11-19T10:00:00Z`).
+- `federal`: per-year federal constants (`deflator`, `baseRates: { ooo, ip, personal }`, `dependentRate`, `pmRf`).
+- `regions` / `newRegions`: RF subjects (`code`, `name: { ru, tg }`, `aliases`, `popular`, `k2026`, `k2027`, `k2027Status: "approved" | "draft" | "pending"`, `pm2026`, `pm2027`, `pm2027Confirmed`, `kPm2027`, optional `note: { ru, tg }`).
+- `fees`: reference state fees (`ст. 333.28 НК РФ`).
