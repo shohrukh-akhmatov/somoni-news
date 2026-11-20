@@ -1,7 +1,11 @@
 {
   "version": 1,
   "defaultYear": 2027,
-  "updatedAt": "2026-11-20T10:00:00Z",
+  "selectableYears": [
+    2026,
+    2027
+  ],
+  "updatedAt": "2026-11-20T12:00:00Z",
   "lastUpdated": "2026-11-20",
   "federal": {
     "2026": {
@@ -222,7 +226,23 @@
         "МСК",
         "Moscow"
       ],
-      "amina": true
+      "amina": true,
+      "years": {
+        "2026": {
+          "k": 2.9323,
+          "status": "approved",
+          "pm": 25342,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 26432,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "50",
@@ -243,7 +263,23 @@
         "МО",
         "Московская"
       ],
-      "amina": true
+      "amina": true,
+      "years": {
+        "2026": {
+          "k": 2.9323,
+          "status": "approved",
+          "pm": 20286,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 21280,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "78",
@@ -264,7 +300,23 @@
         "Питер",
         "Петербург",
         "SPb"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 2.3457659,
+          "status": "approved",
+          "pm": 20644,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": 3.049457,
+          "status": "approved",
+          "pm": 22047,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "47",
@@ -283,7 +335,23 @@
       "aliases": [
         "Ленобласть",
         "ЛО"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 2.3457659,
+          "status": "approved",
+          "pm": 20265,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": 3.049457,
+          "status": "approved",
+          "pm": 21643,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "92",
@@ -298,7 +366,23 @@
       "pm2026": 19318,
       "pm2027": 20632,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 3.9647,
+          "status": "approved",
+          "pm": 19318,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 20632,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "01",
@@ -313,7 +397,23 @@
       "pm2026": 16288,
       "pm2027": 17395,
       "pm2027Confirmed": false,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 2.4,
+          "status": "approved",
+          "pm": 16288,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 17395,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "04",
@@ -328,7 +428,23 @@
       "pm2026": 17992,
       "pm2027": 19216,
       "pm2027Confirmed": false,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 2.25,
+          "status": "approved",
+          "pm": 17992,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19216,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "02",
@@ -347,7 +463,23 @@
       "aliases": [
         "Уфа",
         "Башкирия"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 2.4924,
+          "status": "approved",
+          "pm": 16856,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 18002,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "03",
@@ -362,7 +494,23 @@
       "pm2026": 20644,
       "pm2027": 22047,
       "pm2027Confirmed": false,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 3.682,
+          "status": "approved",
+          "pm": 20644,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 22047,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "05",
@@ -380,7 +528,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Махачкала"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 2.3,
+          "status": "approved",
+          "pm": 17234,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 18407,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "06",
@@ -395,7 +559,23 @@
       "pm2026": 17803,
       "pm2027": 19013,
       "pm2027Confirmed": false,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 1.96,
+          "status": "approved",
+          "pm": 17803,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19013,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "07",
@@ -410,7 +590,23 @@
       "pm2026": 20265,
       "pm2027": 21643,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 3.3,
+          "status": "approved",
+          "pm": 20265,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 21643,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "08",
@@ -425,7 +621,23 @@
       "pm2026": 18560,
       "pm2027": 19822,
       "pm2027Confirmed": false,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 1.5,
+          "status": "approved",
+          "pm": 18560,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19822,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "09",
@@ -440,7 +652,23 @@
       "pm2026": 17803,
       "pm2027": 19013,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 2.3,
+          "status": "approved",
+          "pm": 17803,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19013,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "10",
@@ -456,7 +684,23 @@
       "pm2027": 22452,
       "pm2027Confirmed": true,
       "kPm2027": 1.0,
-      "northZones": true
+      "northZones": true,
+      "years": {
+        "2026": {
+          "k": 3.4,
+          "status": "approved",
+          "pm": 21022,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 22452,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "11",
@@ -472,7 +716,23 @@
       "pm2027": 23261,
       "pm2027Confirmed": false,
       "kPm2027": 1.0,
-      "northZones": true
+      "northZones": true,
+      "years": {
+        "2026": {
+          "k": 2.65,
+          "status": "approved",
+          "pm": 21780,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 23261,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "91",
@@ -487,7 +747,23 @@
       "pm2026": 18371,
       "pm2027": 19620,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 3.5,
+          "status": "approved",
+          "pm": 18371,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19620,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "12",
@@ -502,7 +778,23 @@
       "pm2026": 16666,
       "pm2027": 17800,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 2.98,
+          "status": "approved",
+          "pm": 16666,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 17800,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "13",
@@ -517,7 +809,23 @@
       "pm2026": 16098,
       "pm2027": 17193,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 2.1,
+          "status": "approved",
+          "pm": 16098,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 17193,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "14",
@@ -537,7 +845,23 @@
         "Якутск",
         "Якутия"
       ],
-      "northZones": true
+      "northZones": true,
+      "years": {
+        "2026": {
+          "k": 4.499,
+          "status": "approved",
+          "pm": 28598,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 30543,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "15",
@@ -552,7 +876,23 @@
       "pm2026": 17045,
       "pm2027": 18204,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 2.4,
+          "status": "approved",
+          "pm": 17045,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 18204,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "16",
@@ -572,7 +912,23 @@
         "Казань",
         "Татарстан",
         "Челны"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 2.55,
+          "status": "approved",
+          "pm": 16098,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": 2.77,
+          "status": "approved",
+          "pm": 17193,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "17",
@@ -587,7 +943,23 @@
       "pm2026": 19128,
       "pm2027": 20429,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 1.913,
+          "status": "approved",
+          "pm": 19128,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 20429,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "18",
@@ -602,7 +974,23 @@
       "pm2026": 16856,
       "pm2027": 18002,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 2.43,
+          "status": "approved",
+          "pm": 16856,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 18002,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "19",
@@ -617,7 +1005,23 @@
       "pm2026": 19318,
       "pm2027": 20632,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 3.0,
+          "status": "approved",
+          "pm": 19318,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 20632,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "20",
@@ -632,7 +1036,23 @@
       "pm2026": 18181,
       "pm2027": 19418,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 1.0,
+          "status": "approved",
+          "pm": 18181,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19418,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "21",
@@ -647,7 +1067,23 @@
       "pm2026": 16477,
       "pm2027": 17597,
       "pm2027Confirmed": false,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 2.825,
+          "status": "approved",
+          "pm": 16477,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 17597,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "22",
@@ -662,7 +1098,23 @@
       "pm2026": 16856,
       "pm2027": 18002,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 2.5,
+          "status": "approved",
+          "pm": 16856,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 18002,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "75",
@@ -677,7 +1129,23 @@
       "pm2026": 22159,
       "pm2027": 23666,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 4.76,
+          "status": "approved",
+          "pm": 22159,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 23666,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "41",
@@ -692,7 +1160,23 @@
       "pm2026": 33333,
       "pm2027": 35600,
       "pm2027Confirmed": false,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 4.1,
+          "status": "approved",
+          "pm": 33333,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 35600,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "23",
@@ -712,7 +1196,23 @@
         "Краснодар",
         "Сочи",
         "Кубань"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 8.0,
+          "status": "approved",
+          "pm": 18181,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19418,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "24",
@@ -731,7 +1231,23 @@
       "aliases": [
         "Красноярск"
       ],
-      "northZones": true
+      "northZones": true,
+      "years": {
+        "2026": {
+          "k": 3.2326,
+          "status": "approved",
+          "pm": 21022,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 22452,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "59",
@@ -749,7 +1265,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Пермь"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 2.4044,
+          "status": "approved",
+          "pm": 17424,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 18609,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "25",
@@ -768,7 +1300,23 @@
       "aliases": [
         "Владивосток",
         "Приморье"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 4.06,
+          "status": "approved",
+          "pm": 22537,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 24070,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "26",
@@ -787,7 +1335,23 @@
       "aliases": [
         "Ставрополь",
         "Пятигорск"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 2.5,
+          "status": "approved",
+          "pm": 17045,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 18204,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "27",
@@ -805,7 +1369,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Хабаровск"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 3.1,
+          "status": "approved",
+          "pm": 23106,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 24677,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "28",
@@ -823,7 +1403,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Благовещенск"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 3.775,
+          "status": "approved",
+          "pm": 21780,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 23261,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "29",
@@ -838,7 +1434,23 @@
       "pm2026": 21969,
       "pm2027": 23463,
       "pm2027Confirmed": false,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 3.0,
+          "status": "approved",
+          "pm": 21969,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 23463,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "30",
@@ -853,7 +1465,23 @@
       "pm2026": 18371,
       "pm2027": 19620,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 2.056,
+          "status": "approved",
+          "pm": 18371,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19620,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "31",
@@ -868,7 +1496,23 @@
       "pm2026": 15909,
       "pm2027": 16991,
       "pm2027Confirmed": false,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 2.432,
+          "status": "approved",
+          "pm": 15909,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 16991,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "32",
@@ -883,7 +1527,23 @@
       "pm2026": 17424,
       "pm2027": 18609,
       "pm2027Confirmed": false,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 2.85626,
+          "status": "approved",
+          "pm": 17424,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 18609,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "33",
@@ -901,7 +1561,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Владимир"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 3.21,
+          "status": "approved",
+          "pm": 18371,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19620,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "34",
@@ -919,7 +1595,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Волгоград"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 2.9,
+          "status": "approved",
+          "pm": 16288,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 17395,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "35",
@@ -934,7 +1626,23 @@
       "pm2026": 19128,
       "pm2027": 20429,
       "pm2027Confirmed": false,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 5.8644,
+          "status": "approved",
+          "pm": 19128,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 20429,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "36",
@@ -952,7 +1660,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Воронеж"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 3.35,
+          "status": "approved",
+          "pm": 16666,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 17800,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "37",
@@ -967,7 +1691,23 @@
       "pm2026": 17803,
       "pm2027": 19013,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 5.8645,
+          "status": "approved",
+          "pm": 17803,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19013,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "38",
@@ -986,7 +1726,23 @@
       "aliases": [
         "Иркутск"
       ],
-      "northZones": true
+      "northZones": true,
+      "years": {
+        "2026": {
+          "k": 3.587,
+          "status": "approved",
+          "pm": 20075,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 21441,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "39",
@@ -1004,7 +1760,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Калининград"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 3.2,
+          "status": "approved",
+          "pm": 19507,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 20834,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "40",
@@ -1022,7 +1794,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Калуга"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 3.22543,
+          "status": "approved",
+          "pm": 18181,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19418,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "42",
@@ -1042,7 +1830,23 @@
         "Кемерово",
         "Новокузнецк",
         "Кузбасс"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 2.471,
+          "status": "approved",
+          "pm": 17234,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 18407,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "43",
@@ -1057,7 +1861,23 @@
       "pm2026": 16856,
       "pm2027": 18002,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 2.32,
+          "status": "approved",
+          "pm": 16856,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 18002,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "44",
@@ -1072,7 +1892,23 @@
       "pm2026": 17424,
       "pm2027": 18609,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 2.531,
+          "status": "approved",
+          "pm": 17424,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 18609,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "45",
@@ -1087,7 +1923,23 @@
       "pm2026": 17803,
       "pm2027": 19013,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 4.5,
+          "status": "approved",
+          "pm": 17803,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19013,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "46",
@@ -1102,7 +1954,23 @@
       "pm2026": 16477,
       "pm2027": 17597,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 3.07,
+          "status": "approved",
+          "pm": 16477,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 17597,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "48",
@@ -1120,7 +1988,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Липецк"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 6.426,
+          "status": "approved",
+          "pm": 15719,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 16788,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "49",
@@ -1135,7 +2019,23 @@
       "pm2026": 32954,
       "pm2027": 35195,
       "pm2027Confirmed": false,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 3.7,
+          "status": "approved",
+          "pm": 32954,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 35195,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "51",
@@ -1153,7 +2053,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Мурманск"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 4.5,
+          "status": "approved",
+          "pm": 26406,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 27462,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "52",
@@ -1171,7 +2087,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Нижний Новгород"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 3.46,
+          "status": "approved",
+          "pm": 17803,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19013,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "53",
@@ -1189,7 +2121,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Великий Новгород"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 3.0,
+          "status": "approved",
+          "pm": 18560,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": 3.1,
+          "status": "approved",
+          "pm": 19822,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "54",
@@ -1208,7 +2156,23 @@
       "aliases": [
         "Новосибирск",
         "НСК"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 3.3103,
+          "status": "approved",
+          "pm": 18560,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19822,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "55",
@@ -1226,7 +2190,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Омск"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 2.685,
+          "status": "approved",
+          "pm": 16477,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 17597,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "56",
@@ -1244,7 +2224,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Оренбург"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 2.24,
+          "status": "approved",
+          "pm": 16477,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 17597,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "57",
@@ -1259,7 +2255,23 @@
       "pm2026": 17613,
       "pm2027": 18811,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 2.69,
+          "status": "approved",
+          "pm": 17613,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 18811,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "58",
@@ -1277,7 +2289,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Пенза"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 2.7,
+          "status": "approved",
+          "pm": 15909,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 16991,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "60",
@@ -1292,7 +2320,23 @@
       "pm2026": 18750,
       "pm2027": 20025,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 3.197,
+          "status": "approved",
+          "pm": 18750,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 20025,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "61",
@@ -1311,7 +2355,23 @@
       "aliases": [
         "Ростов-на-Дону",
         "Ростов"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 3.0,
+          "status": "approved",
+          "pm": 17803,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": 3.0,
+          "status": "approved",
+          "pm": 19013,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "62",
@@ -1329,7 +2389,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Рязань"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 2.87,
+          "status": "approved",
+          "pm": 16856,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 18002,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "63",
@@ -1348,7 +2424,23 @@
       "aliases": [
         "Самара",
         "Тольятти"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 3.5,
+          "status": "approved",
+          "pm": 17803,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": 3.34,
+          "status": "approved",
+          "pm": 19013,
+          "pmConfirmed": true,
+          "kPm": 1.5
+        }
+      }
     },
     {
       "code": "64",
@@ -1366,7 +2458,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Саратов"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 2.763,
+          "status": "approved",
+          "pm": 15909,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 16991,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "65",
@@ -1385,7 +2493,23 @@
       "aliases": [
         "Южно-Сахалинск",
         "Сахалин"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 3.46,
+          "status": "approved",
+          "pm": 25757,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 27509,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "66",
@@ -1405,7 +2529,23 @@
         "Екатеринбург",
         "ЕКБ",
         "Урал"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 2.7856,
+          "status": "approved",
+          "pm": 18750,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 20025,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "67",
@@ -1420,7 +2560,23 @@
       "pm2026": 18750,
       "pm2027": 20025,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 2.7014,
+          "status": "approved",
+          "pm": 18750,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 20025,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "68",
@@ -1435,7 +2591,23 @@
       "pm2026": 15719,
       "pm2027": 16788,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 2.4044,
+          "status": "approved",
+          "pm": 15719,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 16788,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "69",
@@ -1453,7 +2625,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Тверь"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 5.914,
+          "status": "approved",
+          "pm": 18560,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19822,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "70",
@@ -1472,7 +2660,23 @@
       "aliases": [
         "Томск"
       ],
-      "northZones": true
+      "northZones": true,
+      "years": {
+        "2026": {
+          "k": 3.08058,
+          "status": "approved",
+          "pm": 18560,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19822,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "71",
@@ -1490,7 +2694,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Тула"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 7.330519,
+          "status": "approved",
+          "pm": 18939,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 20227,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "72",
@@ -1508,7 +2728,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Тюмень"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 3.425,
+          "status": "approved",
+          "pm": 18939,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 20227,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "73",
@@ -1526,7 +2762,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Ульяновск"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 2.1,
+          "status": "approved",
+          "pm": 16856,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 18002,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "74",
@@ -1545,7 +2797,23 @@
       "aliases": [
         "Челябинск",
         "Магнитогорск"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 4.9437,
+          "status": "approved",
+          "pm": 17424,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 18609,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "76",
@@ -1563,7 +2831,23 @@
       "kPm2027": 1.0,
       "aliases": [
         "Ярославль"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 3.22,
+          "status": "approved",
+          "pm": 18939,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": 3.22,
+          "status": "approved",
+          "pm": 20227,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "79",
@@ -1578,7 +2862,23 @@
       "pm2026": 23674,
       "pm2027": 25284,
       "pm2027Confirmed": false,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 2.93,
+          "status": "approved",
+          "pm": 23674,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 25284,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "83",
@@ -1593,7 +2893,23 @@
       "pm2026": 31060,
       "pm2027": 33172,
       "pm2027Confirmed": false,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 2.442,
+          "status": "approved",
+          "pm": 31060,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 33172,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "86",
@@ -1615,7 +2931,23 @@
         "Сургут",
         "Нижневартовск",
         "Ханты-Мансийск"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 4.284,
+          "status": "approved",
+          "pm": 22102,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 22986,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "87",
@@ -1630,7 +2962,23 @@
       "pm2026": 49431,
       "pm2027": 52792,
       "pm2027Confirmed": true,
-      "kPm2027": 1.0
+      "kPm2027": 1.0,
+      "years": {
+        "2026": {
+          "k": 3.1,
+          "status": "approved",
+          "pm": 49431,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 52792,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "89",
@@ -1652,7 +3000,23 @@
         "Новый Уренгой",
         "Ноябрьск",
         "Салехард"
-      ]
+      ],
+      "years": {
+        "2026": {
+          "k": 5.426,
+          "status": "approved",
+          "pm": 25946,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 27711,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     }
   ],
   "newRegions": [
@@ -1670,7 +3034,23 @@
       "pm2027": 19013,
       "pm2027Confirmed": true,
       "kPm2027": 1.0,
-      "specialPatentRegime": true
+      "specialPatentRegime": true,
+      "years": {
+        "2026": {
+          "k": null,
+          "status": "pending",
+          "pm": 17803,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19013,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "94",
@@ -1686,7 +3066,23 @@
       "pm2027": 19013,
       "pm2027Confirmed": true,
       "kPm2027": 1.0,
-      "specialPatentRegime": true
+      "specialPatentRegime": true,
+      "years": {
+        "2026": {
+          "k": null,
+          "status": "pending",
+          "pm": 17803,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19013,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "90",
@@ -1702,7 +3098,23 @@
       "pm2027": 19620,
       "pm2027Confirmed": false,
       "kPm2027": 1.0,
-      "specialPatentRegime": true
+      "specialPatentRegime": true,
+      "years": {
+        "2026": {
+          "k": null,
+          "status": "pending",
+          "pm": 18371,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19620,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     },
     {
       "code": "95",
@@ -1718,7 +3130,23 @@
       "pm2027": 19620,
       "pm2027Confirmed": false,
       "kPm2027": 1.0,
-      "specialPatentRegime": true
+      "specialPatentRegime": true,
+      "years": {
+        "2026": {
+          "k": null,
+          "status": "pending",
+          "pm": 18371,
+          "pmConfirmed": true,
+          "kPm": 1.0
+        },
+        "2027": {
+          "k": null,
+          "status": "pending",
+          "pm": 19620,
+          "pmConfirmed": false,
+          "kPm": 1.0
+        }
+      }
     }
   ]
 }
