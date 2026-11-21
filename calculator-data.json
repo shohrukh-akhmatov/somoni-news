@@ -5,8 +5,8 @@
     2026,
     2027
   ],
-  "updatedAt": "2026-11-20T12:00:00Z",
-  "lastUpdated": "2026-11-20",
+  "updatedAt": "2026-11-21T08:23:00Z",
+  "lastUpdated": "2026-11-21",
   "federal": {
     "2026": {
       "deflator": 2.842,
@@ -215,8 +215,8 @@
       },
       "popular": true,
       "k2026": 2.9323,
-      "k2027": null,
-      "k2027Status": "pending",
+      "k2027": 3.0495,
+      "k2027Status": "draft",
       "pm2026": 25342,
       "pm2027": 26432,
       "pm2027Confirmed": true,
@@ -236,8 +236,8 @@
           "kPm": 1.0
         },
         "2027": {
-          "k": null,
-          "status": "pending",
+          "k": 3.0495,
+          "status": "draft",
           "pm": 26432,
           "pmConfirmed": true,
           "kPm": 1.0
@@ -252,8 +252,8 @@
       },
       "popular": true,
       "k2026": 2.9323,
-      "k2027": null,
-      "k2027Status": "pending",
+      "k2027": 3.0495,
+      "k2027Status": "draft",
       "pm2026": 20286,
       "pm2027": 21280,
       "pm2027Confirmed": true,
@@ -273,8 +273,8 @@
           "kPm": 1.0
         },
         "2027": {
-          "k": null,
-          "status": "pending",
+          "k": 3.0495,
+          "status": "draft",
           "pm": 21280,
           "pmConfirmed": true,
           "kPm": 1.0
@@ -1222,8 +1222,8 @@
       },
       "popular": false,
       "k2026": 3.2326,
-      "k2027": null,
-      "k2027Status": "pending",
+      "k2027": 3.355,
+      "k2027Status": "draft",
       "pm2026": 21022,
       "pm2027": 22452,
       "pm2027Confirmed": false,
@@ -1241,8 +1241,8 @@
           "kPm": 1.0
         },
         "2027": {
-          "k": null,
-          "status": "pending",
+          "k": 3.355,
+          "status": "draft",
           "pm": 22452,
           "pmConfirmed": false,
           "kPm": 1.0
@@ -2450,8 +2450,8 @@
       },
       "popular": false,
       "k2026": 2.763,
-      "k2027": null,
-      "k2027Status": "pending",
+      "k2027": 2.905,
+      "k2027Status": "approved",
       "pm2026": 15909,
       "pm2027": 16991,
       "pm2027Confirmed": true,
@@ -2468,8 +2468,8 @@
           "kPm": 1.0
         },
         "2027": {
-          "k": null,
-          "status": "pending",
+          "k": 2.905,
+          "status": "approved",
           "pm": 16991,
           "pmConfirmed": true,
           "kPm": 1.0
@@ -2484,8 +2484,8 @@
       },
       "popular": false,
       "k2026": 3.46,
-      "k2027": null,
-      "k2027Status": "pending",
+      "k2027": 3.691,
+      "k2027Status": "approved",
       "pm2026": 25757,
       "pm2027": 27509,
       "pm2027Confirmed": true,
@@ -2503,8 +2503,8 @@
           "kPm": 1.0
         },
         "2027": {
-          "k": null,
-          "status": "pending",
+          "k": 3.691,
+          "status": "approved",
           "pm": 27509,
           "pmConfirmed": true,
           "kPm": 1.0
@@ -2519,8 +2519,8 @@
       },
       "popular": true,
       "k2026": 2.7856,
-      "k2027": null,
-      "k2027Status": "pending",
+      "k2027": 3.0495,
+      "k2027Status": "approved",
       "pm2026": 18750,
       "pm2027": 20025,
       "pm2027Confirmed": true,
@@ -2539,8 +2539,8 @@
           "kPm": 1.0
         },
         "2027": {
-          "k": null,
-          "status": "pending",
+          "k": 3.0495,
+          "status": "approved",
           "pm": 20025,
           "pmConfirmed": true,
           "kPm": 1.0
@@ -2788,8 +2788,8 @@
       },
       "popular": true,
       "k2026": 4.9437,
-      "k2027": null,
-      "k2027Status": "pending",
+      "k2027": 4.9825,
+      "k2027Status": "approved",
       "pm2026": 17424,
       "pm2027": 18609,
       "pm2027Confirmed": true,
@@ -2807,8 +2807,8 @@
           "kPm": 1.0
         },
         "2027": {
-          "k": null,
-          "status": "pending",
+          "k": 4.9825,
+          "status": "approved",
           "pm": 18609,
           "pmConfirmed": true,
           "kPm": 1.0
